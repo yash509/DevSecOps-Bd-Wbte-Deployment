@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pe-wa-deployment
+  name: bd-wbte-deployment
 spec:
   replicas: 6  # Number of desired replicas
   selector:
     matchLabels:
-      app: pe-wa
+      app: bd-wbte
   template:
     metadata:
       labels:
-        app: pe-wa
+        app: bd-wbte
     spec:
       containers:
-      - name: pe-wa
-        image: yash5090/pe-wa:latest
+      - name: bd-wbte
+        image: yash5090/bd-wbte:latest
         ports:
         - containerPort: 5000
