@@ -39,7 +39,7 @@ pipeline {
         
         stage('Checkout from Git') {                        
             steps {                                       
-                git branch: 'main', url: 'https://github.com/yash509/DevSecOps-bd-wbte-WebApp-Deployment.git'
+                git branch: 'main', url: 'https://github.com/yash509/DevSecOps-Bd-Wbte-Deployment.git'
             }
         }
         
